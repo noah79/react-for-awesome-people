@@ -40,17 +40,16 @@ export default class Slides extends React.Component {
                         </Heading>
                         <Markdown>
                             {`
-* https://facebook.github.io/react/
-* Facebook + Instagram
-* Open Source
-* Vibrant Developer Community
-* Fast!
-* `}
+* Open Source:  https://facebook.github.io/react/
+* Created and maintained by Facebook + Instagram
+* No Bindings - Virtual DOM (Fast!)
+* JSX/TSX - 100% Javascript/Typescript - No templates!
+`}
                         </Markdown>
                     </Slide>
 
                     <Slide transition={["zoom"]} bgColor="primary">
-                        <Heading size={1} fit caps lineHeight={1} textColor="black">
+                        <Heading size={1} fit lineHeight={1} textColor="black">
                             Why React?
                         </Heading>
                         <Markdown>
@@ -58,16 +57,13 @@ export default class Slides extends React.Component {
 * Everything is a component.
 * Every component has a render() method.
 * Every component has props and state.
-* The Virtual DOM
-* JSX/TSX - 100% Javascript/Typescript - No templates!
 * Excellent documentation, errors, and warnings
-* Hot reloading!
-          `}
+* Hot reloading!`}
                             </Markdown>
                     </Slide>
 
                     <Slide transition={["zoom"]} bgColor="primary">
-                        <Heading size={1} fit caps lineHeight={1} textColor="black">
+                        <Heading size={1} fit lineHeight={1} textColor="black">
                             Components
                         </Heading>
                         <CodePane
@@ -79,7 +75,7 @@ export default class Slides extends React.Component {
                     </Slide>
 
                     <Slide>
-                        <Heading size={1} fit caps lineHeight={1} textColor="black">
+                        <Heading size={1} fit lineHeight={1} textColor="black">
                             Component Lifecycle
                         </Heading>
                         <CodePane
@@ -90,7 +86,7 @@ export default class Slides extends React.Component {
                     </Slide>
                     
                     <Slide>
-                        <Heading size={1} fit caps lineHeight={1} textColor="black">
+                        <Heading size={1} fit lineHeight={1} textColor="black">
                             Build Ecosystem
                         </Heading>
                         <Markdown>
@@ -98,6 +94,7 @@ export default class Slides extends React.Component {
 * Module Bundler:  [Webpack](https://webpack.github.io/)
 * Build System:  [Gulp](http://gulpjs.com)
 * Package Manager:  [NPM](http://npmjs.com)
+* PostCSS:  AutoPrefixer + Lint
 `}
                         </Markdown>
                     </Slide>

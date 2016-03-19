@@ -122,7 +122,7 @@ export default class Presenter extends Component {
         display: "flex",
         width: "100%",
         height: "100%",
-        alignItems: "center",
+        //alignItems: "center",
         justifyContent: "center",
         flex: 1
       },
