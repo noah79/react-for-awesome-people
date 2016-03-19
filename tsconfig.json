@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "jsx": "react",
+    "noEmit": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true
+  },
+  "files": [
+    "typings/tsd.d.ts",
+    "examples/example.tsx"
+  ]
+  //   ,
+  //   "exclude": [
+  //     "typings",
+  //     "node_modules",
+  //     "src/components/system/highcharts/angular",
+  //     "src/lib",
+
+  //     "src/components/system/internal/mouseOverScrollbarTooltipBehavior.tsx"
+  //   ]
+}

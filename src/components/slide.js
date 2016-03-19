@@ -11,7 +11,9 @@ const Slide = React.createClass({
   getDefaultProps() {
     return {
       align: "center center",
-      presenterStyle: {}
+      presenterStyle: {},
+        maxHeight:600,
+        maxWidth:1200
     };
   },
   propTypes: {
@@ -43,8 +45,8 @@ const Slide = React.createClass({
     const mobile = window.matchMedia("(max-width: 628px)").matches;
     const content = this.refs.content;
     const zoom = (content.offsetWidth / 1000);
-    const contentScaleY = (content.parentNode.offsetHeight / 700);
-    const contentScaleX = (content.parentNode.offsetWidth / 700);
+    const contentScaleY = (content.parentNode.offsetHeight / this.props.maxHeight);
+    const contentScaleX = (content.parentNode.offsetWidth / this.props.maxWidth);
     const contentScale = mobile ? 1 : Math.min(contentScaleY, contentScaleX);
     this.setState({
       zoom: zoom > 0.6 ? zoom : 0.6,
@@ -106,11 +108,11 @@ const Slide = React.createClass({
       },
       content: {
         flex: 1,
-        maxHeight: this.props.maxHeight || 700,
-        maxWidth: this.props.maxWidth || 1000,
+        maxHeight: this.props.maxHeight,
+        maxWidth: this.props.maxWidth,
         fontSize: 16 * this.state.zoom,
-        transform: `scale(${this.state.contentScale})`,
-        padding: this.state.zoom > 0.6 ? this.props.margin || 40 : 10
+        //transform: `scale(${this.state.contentScale})`,
+        padding: this.state.zoom > 0.6 ? this.props.margin || 20 : 10
       }
     };
     return (
